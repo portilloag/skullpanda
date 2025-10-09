@@ -1,0 +1,50 @@
+/* ---------------------------- Menú desplegable ------------------------- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 0.75rem 1rem;
+  }
+  
+  .dropdown-content li a {
+    color: black;
+  }
+  
+  .dropdown-content li {
+    padding: 0.625rem;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav div ul {
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0.625rem 0 0;
+    display: flex;
+    gap: 20px;
+  }
