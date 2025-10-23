@@ -1,3 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  color: rgb(48, 45, 45);
+  background-color: rgb(74, 84, 224)
+}
 /* ---------------------------- Menú desplegable ------------------------- */
 
 .dropdown {
@@ -8,7 +24,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #2e16b9;
     min-width: 160px;
     padding: 0.75rem 1rem;
   }
@@ -26,91 +42,29 @@
   }
 
   /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
+#main-header{
+  background-image: url(img/wireframe.png);
+  background-size: contain;
+  height: 100vh;
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav div ul {
-    justify-content: flex-end;
-  }
-  
-  nav ul li {
-    position: relative;
-  }
-  
-  nav ul {
+#main-header h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main-menu > ul{
+  display: flex;
+  justify-content: center;
+
+  li {
     list-style: none;
-    padding: 0;
-    margin: 0 0.625rem 0 0;
-    display: flex;
-    gap: 20px;
   }
 
-  /* grid */
-
-.row {
-  overflow: hidden;
-}
-
-.col-1 {
-  width: 8.3%;
-  float: left;
-}
-
-.col-2 {
-  width: 16.66%;
-  float: left;
-}
-
-.col-3 {
-  width: 25%;
-  float: left;
-}
-
-.col-4 {
-  width: 33.33%;
-  float: left;
-}
-
-.col-5 {
-  width: 41.66%;
-  float: left;
-}
-
-.col-6 {
-  width: 50%;
-  float: left;
-}
-
-.col-7 {
-  width: 58.33%;
-  float: left;
-}
-
-.col-8 {
-  width: 66.66%;
-  float: left;
-}
-
-.col-9 {
-  width: 75%;
-  float: left;
-}
-
-.col-10 {
-  width: 83.33%;
-  float: left;
-}
-
-.col-11 {
-  width: 91.66%;
-  float: left;
-}
-
-.col-12 {
-  width: 100%;
-  float: left;
+  a{
+    margin: 0.75rem;
+    text-decoration: none;
+    color: white;
+  }
 }
