@@ -14,44 +14,32 @@ body{
   color: rgb(48, 45, 45);
   background-color: rgb(74, 84, 224)
 }
-/* ---------------------------- Menú desplegable ------------------------- */
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #2e16b9;
-    min-width: 160px;
-    padding: 0.75rem 1rem;
-  }
-  
-  .dropdown-content li a {
-    color: black;
-  }
-  
-  .dropdown-content li {
-    padding: 0.625rem;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.container {
+  width: 100%;
+  max-width: 1980px;
+  margin: 0 auto;
+}
 
   /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
 #main-header{
-  background-image: url(img/wireframe.png);
-  background-size: contain;
-  height: 100vh;
+  background-color: rgb(121,169,233);
+  position: relative;
+}
+
+#main-header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 #main-header h1{
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  font-size: 4rem;
 }
 
 .main-menu > ul{
@@ -67,4 +55,14 @@ body{
     text-decoration: none;
     color: white;
   }
+}
+
+.title-links {
+  margin: 40px;
+  position: absolute;
+  top: -20px;
+}
+
+#banner-home {
+  width: 100%;
 }
