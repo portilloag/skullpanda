@@ -111,6 +111,25 @@ body{
   margin-left: 90px;
 }
 
-.true {
-  filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5));
+.section #new {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section .sobre-nosotros img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
+.sombra {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
 }
