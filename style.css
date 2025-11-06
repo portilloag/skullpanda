@@ -1,3 +1,11 @@
+/*declaracion de variables en css*/
+
+:root {
+  --main-white:white;
+  --main-lightblue: #79A9E9;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -29,7 +37,7 @@ body{
   /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
 #main-header{
   background-image: url(img/banner-webfull.png);
-  background-color: #79A9E9;
+  background-color: var(--main-lightblue);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +74,7 @@ body{
   }
 }
 
-.title-links {
+.margin-20  {
   margin: 20px;
 }
 
@@ -111,6 +119,25 @@ body{
   margin-left: 90px;
 }
 
+.title-section {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-white);
+  margin-bottom: 20px;
+  background: linear-gradient(90deg,rgba(214, 198, 204, 0) 0%, rgba(214, 198, 204, 1) 50%, rgba(214, 198, 204, 0) 100%);
+  padding: 10px;
+}
+
+.ver-mas{
+  display: flex;
+  text-decoration: underline;
+  justify-content: end;
+  color: var(--main-white);
+  margin-top: 20px;
+}
+
 .section #new {
   display: flex;
   margin: 0 auto;
@@ -123,8 +150,9 @@ body{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  color: var(--main-white);
+  margin-top: 20px;
 }
-
 
 .section .sobre-nosotros img {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
@@ -132,4 +160,11 @@ body{
 
 .sombra {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+  transition: 0.5s;
 }
+
+.sombra:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
