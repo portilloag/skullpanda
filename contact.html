@@ -9,140 +9,109 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>SKULLPANDA</h1>
-        <nav>
-          <div>
-            <ul>
-              <li class="dropdown">
-                <a href="index.html">PRODUCTOS</a>
-                <ul class="dropdown-content">
-                  <li>
-                    <a href="">BLINDBOX</a>
-                  </li>
-                  <li>
-                    <a href="">MEGA1000%</a>
-                  </li>
-                  <li><a href="">OTROS</a></li>
-                </ul>
-              </li>
-              <li><a href="#tienda">TIENDA</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-      <form action="thank-you.html" method="get">
-        <section id="contact">
-            <div class="row">
-                <div  class="col-6">
-                    <h2>Formulario de Contacto</h2>
-                    <div>
-                        <label for="name">Nombre(s)</label>
-                        <input 
-                            type="text" 
-                            name="name" 
-                            id="name"
-                            placeholder="Coloque su(s) nombre(s)"
-                            autofocus
-                            autocomplete="name"
-                            list="names"
-                            >
-                    </div>
-    
-                    <div>
-                        <label for="last-name">Apellido(s)</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-    
-                    <div>
-                        <label for="email">Correo Electrónico</label>
-                        <input 
-                            type="email" 
-                            name="email" 
-                            id="email"
-                            required
-                            >
-                    </div>
-    
-                    <div>
-                        <label for="phone">Teléfono de Contacto</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-    
-                    <div>
-                        <label for="birthday">Fecha de Nacimiento</label>
-                        <input type="date" name="birthday" id="birthday">
-                    </div>
-
-                    <div>
-                        <label for="season">Estación Favorita del Año</label>
-                        <select name="season" id="season">
-                            <option value="spring">Primavera</option>
-                            <option value="summer">Verano</option>
-                            <option value="fall">Otoño</option>
-                            <option value="winter">Invierno</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <fieldset>
-                            <legend>Comida(s) Favorita/s</legend>
-                            <div>
-                                <input type="checkbox" name="barbacoa" id="barbacoa">
-                                <label for="barbacoa">Asado</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="milanesa" id="milanesa">
-                                <label for="milanesa">Milanesa</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="spagetti" id="spagetti">
-                                <label for="spagetti">Fideos</label>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div>
-                        <fieldset>
-                            <legend>¿Es usted amable?</legend>
-                            <div>
-                                <input type="radio" name="kind" id="kind-yes" value="yes">
-                                <label for="kind-yes">Sí</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="kind" id="kind-no" value="no">
-                                <label for="kind-no">No</label>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div>
-                        <label for="message">Diganos su mensaje</label>
-                        <textarea 
-                            name="message" 
-                            id="message" 
-                            placeholder="Escriba un comentario aquí" 
-                            required>
-                        </textarea>
-                    </div>
-                    <div>
-                        <input type="submit" name="send" id="send" value="Ole">
-                    </div>
-                        <datalist id="names">
-                            <option>Pepa</option>
-                            <option>Pig</option>
-                            <option>Ron</option>
-                            <option>Hermione</option>
-                            <option>Tito</option>
-                        </datalist>
-                </div>
-                <div class="col-6">
-                    <h2>Donde Encontrarnos</h2>
-                </div>
+    <div class="contact-efect">
+        <header id="contact-header">
+            <div style="color: black;">
+              <div class="margin-20">
+                <h1>SKULLPANDA</h1>
+                <nav class="main-menu">
+                  <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-        </section>
-
-      </form>
+          </header>
+    
+        <div class="contact-bkg">
+            <div class="col-2">
+                <div>
+                    <h2>VAMOS, <br>CONTACTANOS!</h2>
+                    <div id="iconos-contact">
+                        <figure>
+                            <img src="img/gmail.png" alt="Logo de Gmail">
+                          </figure>
+          
+                          <figure>
+                            <img src="img/whatsapp.png" alt="Logo de Whatsapp">
+                          </figure>
+          
+                          <figure>
+                            <img src="img/facebook.png" alt="Logo de Facebook">
+                          </figure>
+          
+                          <figure>
+                            <img src="img/instagram.png" alt="Logo de Instagram">
+                          </figure>
+                    </div>
+        
+                </div>
+                <form action="thank-you.html" method="get">
+                  <section id="contact">
+                      <div class="row">
+                          <div  class="col-6">
+                              <div>
+                                  <label for="name">NOMBRE</label>
+                                  <input 
+                                      type="text" 
+                                      name="name" 
+                                      id="name"
+                                      placeholder="Coloque su(s) nombre(s)"
+                                      autofocus
+                                      autocomplete="name"
+                                      list="names"
+                                      >
+                              </div>
+              
+                              <div>
+                                  <label for="last-name">APELLIDO</label>
+                                  <input type="text" name="last-name" id="last-name">
+                              </div>
+              
+                              <div>
+                                  <label for="email">EMAIL</label>
+                                  <input 
+                                      type="email" 
+                                      name="email" 
+                                      id="email"
+                                      required
+                                      >
+                              </div>
+          
+                              <div>
+                                  <label for="coleccion">COLECCIÓN FAVORITA</label>
+                                  <select name="coleccion" id="coleccion">
+                                      <option value="warmth">The Warmth</option>
+                                      <option value="sound">Sound</option>
+                                      <option value="reality">Image of Reality</option>
+                                      <option value="blossom">Ink Plum Blossom</option>
+                                  </select>
+                              </div>
+    
+                              <div>
+                                <label for="edad">EDAD</label>
+                                <input type="date" id="edad" name="edad">
+                              </div>
+    
+                              <div>
+                                  <label for="message">Diganos su mensaje</label>
+                                  <textarea 
+                                      name="message" 
+                                      id="message" 
+                                      placeholder="Escriba un comentario aquí" 
+                                      required>
+                                  </textarea>
+                              </div>
+                              
+                      </div>
+                  </section>
+          
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

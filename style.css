@@ -145,7 +145,6 @@ body{
   align-items: center;
   color: var(--main-white);
   margin-bottom: 20px;
-  background: linear-gradient(90deg,rgba(214, 198, 204, 0) 0%, rgba(214, 198, 204, 1) 50%, rgba(214, 198, 204, 0) 100%);
   padding: 10px;
 }
 
@@ -190,6 +189,7 @@ body{
 .bgd-image {
   background-image: url(img/footer.png);
   background-repeat: no-repeat;
+  background-size:cover;
 }
 
 #iconos {
@@ -208,4 +208,84 @@ body{
   align-items: center;
   justify-content: center;
   text-decoration: underline;
+  color: var(--main-white);
+}
+
+.contact-efect {
+  background-color: #f4f1e9;
+  background-image: url(img/fibras.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* 
+.contact-bkg {
+  background-image: url(img/fibras.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+} */
+
+.contact-bkg {
+  background-image: url(img/contact-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
+
+#contact-header > div, #header-productos > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-header h1, #header-productos h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(48, 45, 45);
+  font-size: 4rem;
+}
+
+.main-menu > ul{
+  display: flex;
+  justify-content: center;
+
+  li {
+    list-style: none;
+  }
+
+  a{
+    margin: 0.75rem;
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+  }
+}
+
+.margin-20  {
+  margin: 20px;
+}
+
+.col-2{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  > div{
+    margin: 50px 20px 50px 20px;
+  }
+}
+
+#iconos-contact {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  filter: invert();
+  
+  figure img {
+    margin-right: 10px;
+  }
 }
