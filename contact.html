@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SKULLPANDA</title>
 
-    <!-- link de estilos -->
-     <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKULLPANDA</title>
+
+  <!-- link de estilos -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- link de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="contact-efect">
-        <header id="contact-header">
-            <div style="color: black;">
-              <div class="margin-20">
-                <h1>SKULLPANDA</h1>
-                <nav class="main-menu">
-                  <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACTO</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </header>
-    
-        <div class="contact-bkg">
-            <div class="col-2">
-                <div>
-                    <h2>VAMOS, <br>CONTACTANOS!</h2>
-                    <div id="iconos-contact">
-                        <figure>
-                            <img src="img/gmail.png" alt="Logo de Gmail">
-                          </figure>
-          
-                          <figure>
-                            <img src="img/whatsapp.png" alt="Logo de Whatsapp">
-                          </figure>
-          
-                          <figure>
-                            <img src="img/facebook.png" alt="Logo de Facebook">
-                          </figure>
-          
-                          <figure>
-                            <img src="img/instagram.png" alt="Logo de Instagram">
-                          </figure>
-                    </div>
-        
-                </div>
-                <form action="thank-you.html" method="get">
-                  <section id="contact">
-                      <div class="row">
-                          <div  class="col-6">
-                              <div>
-                                  <label for="name">NOMBRE</label>
-                                  <input 
-                                      type="text" 
-                                      name="name" 
-                                      id="name"
-                                      placeholder="Coloque su(s) nombre(s)"
-                                      autofocus
-                                      autocomplete="name"
-                                      list="names"
-                                      >
-                              </div>
-              
-                              <div>
-                                  <label for="last-name">APELLIDO</label>
-                                  <input type="text" name="last-name" id="last-name">
-                              </div>
-              
-                              <div>
-                                  <label for="email">EMAIL</label>
-                                  <input 
-                                      type="email" 
-                                      name="email" 
-                                      id="email"
-                                      required
-                                      >
-                              </div>
-          
-                              <div>
-                                  <label for="coleccion">COLECCIÓN FAVORITA</label>
-                                  <select name="coleccion" id="coleccion">
-                                      <option value="warmth">The Warmth</option>
-                                      <option value="sound">Sound</option>
-                                      <option value="reality">Image of Reality</option>
-                                      <option value="blossom">Ink Plum Blossom</option>
-                                  </select>
-                              </div>
-    
-                              <div>
-                                <label for="edad">EDAD</label>
-                                <input type="date" id="edad" name="edad">
-                              </div>
-    
-                              <div>
-                                  <label for="message">Diganos su mensaje</label>
-                                  <textarea 
-                                      name="message" 
-                                      id="message" 
-                                      placeholder="Escriba un comentario aquí" 
-                                      required>
-                                  </textarea>
-                              </div>
-                              
-                      </div>
-                  </section>
-          
-                </form>
-            </div>
-        </div>
+
+<body style="background-color: #f4f1e9;
+  background-image: url(img/fibras.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;">
+
+  <header id="header-contact">
+    <div style="color: black;">
+      <div class="margin-20">
+        <h1>SKULLPANDA</h1>
+        <nav class="menu-contact">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+  </header>
+
+  <div id="bgd-contact">
+
+      <div class="container-1200">
+        <main id="main-contact">
+          <section class="info-contact">
+            <h2>VAMOS, <br>CONTACTANOS!</h2>
+
+            <div id="iconos-contact">
+              <figure>
+                <img src="img/gmail.png" alt="Logo de Gmail">
+              </figure>
+
+              <figure>
+                <img src="img/whatsapp.png" alt="Logo de Whatsapp">
+              </figure>
+
+              <figure>
+                <img src="img/facebook.png" alt="Logo de Facebook">
+              </figure>
+
+              <figure>
+                <img src="img/instagram.png" alt="Logo de Instagram">
+              </figure>
+            </div>
+
+            <div class="info-alumno">
+              <p>Nombre y apellido: Andrea Portillo</p>
+              <p>Materia: Maquetado y programación web</p>
+              <p>Docente: Carlos Ferrer</p>
+              <p>Este sitio es una entrega para un TP del primer cuatrimestre de la Escuela Da Vinci 2025</p>
+            </div>
+          </section>
+
+          <form action="thank-you.html" method="get">
+            <section id="contact">
+
+              <div class="grid-2">
+                <div class="col full-2">
+                  <label for="name">NOMBRE</label>
+                  <input type="text" name="name" id="name" placeholder="Tu(s) nombre(s)" autofocus autocomplete="name"
+                    list="names" required>
+                </div>
+
+                <div class="col full-2">
+                  <label for="last-name">APELLIDO</label>
+                  <input type="text" name="last-name" id="last-name" placeholder="Tu(s) apellido(s)" required>
+                </div>
+              </div>
+
+              <div class="col full">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+              </div>
+
+              <div class="grid-2">
+                <div class="col full-2">
+                  <label for="coleccion">COLECCIÓN FAVORITA</label>
+                  <select name="coleccion" id="coleccion" required>
+                    <option value="warmth">The Warmth</option>
+                    <option value="sound">Sound</option>
+                    <option value="reality">Image of Reality</option>
+                    <option value="blossom">Ink Plum Blossom</option>
+                  </select>
+                </div>
+
+                <div class="col full-2">
+                  <label for="edad">EDAD</label>
+                  <input type="date" id="edad" name="edad" required>
+                </div>
+              </div>
+
+              <div class="col full">
+                <label for="message">DÉJANOS UN MENSAJE</label>
+                <textarea name="message" id="message" placeholder="Escriba un comentario aquí" rows="5"
+                  required></textarea>
+              </div>
+
+              <div class="boton full">
+                <button type="submit">ENVIAR</button>
+              </div>
+            </section>
+          </form>
+        </main>
+      </div>
+  </div>
 </body>
+
 </html>

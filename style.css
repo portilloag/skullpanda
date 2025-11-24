@@ -1,23 +1,22 @@
 /*declaracion de variables en css*/
 
 :root {
-  --main-white:white;
-  --main-lightblue: #79A9E9;
+  --main-white: white;
+  --main-lightblue: #79a9e9;
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
 
-body{
+body {
   font-family: "Roboto", sans-serif;
   color: rgb(48, 45, 45);
 }
@@ -26,33 +25,24 @@ body{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-
 }
 
 .container-1200 {
+  width: 80%;
   max-width: 1200px;
+  gap: 50px;
   margin: 0 auto;
-
 }
 
 .efecto {
   background-image: url(img/efecto-papel.png);
   mask: linear-gradient(to top, #000 80%, transparent 100%);
   -webkit-mask: linear-gradient(to top, #000 80%, transparent 100%);
-  
 }
 
-/* .deg {
-  background-image: linear-gradient(
-    to bottom, 
-    #F2F1F0,
-    #D9CFCC
+/* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
 
-  );
-} */
-
-  /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
-#main-header{
+#main-header {
   background-image: url(img/banner-webfull.png);
   background-color: var(--main-lightblue);
   background-position: center top;
@@ -63,37 +53,43 @@ body{
   -webkit-mask: linear-gradient(to bottom, #000 80%, transparent 100%);
 }
 
-#main-header > div, #header-productos > div {
+#main-header>div,
+#header-productos>div,
+#header-contact>div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#main-header h1, #header-productos h1{
+#main-header h1,
+#header-productos h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 4rem;
+  font-family: "Impact";
+  font-style: normal;
 }
 
-.main-menu > ul{
+.main-menu>ul {
   display: flex;
   justify-content: center;
-
   li {
     list-style: none;
   }
 
-  a{
+  a {
     margin: 0.75rem;
     text-decoration: none;
     color: white;
+    font-family: "Impact";
+    font-style: normal;
   }
 }
 
-.margin-20  {
+.margin-20 {
   margin: 20px;
 }
 
@@ -105,13 +101,13 @@ body{
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1; 
-  background-color: #F2F1F0; 
-  transition: background-color 1.0s ease-in-out;
+  z-index: -1;
+  background-color: #f2f1f0;
+  transition: background-color 1s ease-in-out;
 }
 
 .section {
-  height: 100vh; 
+  height: 100vh;
   background-color: transparent;
 }
 
@@ -130,11 +126,11 @@ body{
   justify-content: center;
 }
 
-.sobre-nosotros > div {
+.sobre-nosotros>div {
   width: 391px;
   height: 221px;
   left: 691px;
-  top: calc(50% - 221px/2 + 0.5px);
+  top: calc(50% - 221px / 2 + 0.5px);
   margin-left: 90px;
 }
 
@@ -148,7 +144,7 @@ body{
   padding: 10px;
 }
 
-.ver-mas{
+.ver-mas {
   display: flex;
   text-decoration: underline;
   justify-content: end;
@@ -189,7 +185,7 @@ body{
 .bgd-image {
   background-image: url(img/footer.png);
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 #iconos {
@@ -197,13 +193,12 @@ body{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  
   figure img {
     margin: 10px;
   }
 }
 
-#footer-main p{
+#footer-main p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,45 +206,23 @@ body{
   color: var(--main-white);
 }
 
-.contact-efect {
-  background-color: #f4f1e9;
-  background-image: url(img/fibras.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-/* 
-.contact-bkg {
-  background-image: url(img/fibras.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-} */
+/*CONTACT*/
 
-.contact-bkg {
-  background-image: url(img/contact-fondo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+#header-contact {
+  flex-shrink: 0;
 }
 
- /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
-
-#contact-header > div, #header-productos > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#contact-header h1, #header-productos h1{
+#header-contact h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(48, 45, 45);
   font-size: 4rem;
+  font-family: "Impact";
+  font-style: normal;
 }
 
-.main-menu > ul{
+.menu-contact>ul {
   display: flex;
   justify-content: center;
 
@@ -257,35 +230,175 @@ body{
     list-style: none;
   }
 
-  a{
+  a {
     margin: 0.75rem;
     text-decoration: none;
     color: rgb(48, 45, 45);
+    font-family: "Impact";
+    font-style: normal;
   }
 }
 
-.margin-20  {
-  margin: 20px;
+#bgd-contact {
+  background-image: url(img/contact-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(48, 45, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: auto;
 }
 
-.col-2{
+#main-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.info-contact h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: "Alata", sans-serif;
+}
+
+#iconos-contact {
+  margin: 20px 0 20px 0;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+}
+
+#iconos-contact figure img {
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+#iconos-contact figure img:hover {
+  transform: scale(1.1);
+}
+
+.info-alumno {
+  font-family: "Alata", sans-serif;
+}
+
+form {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+label {
+  font-family: "Alata", sans-serif;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+#name,
+#last-name,
+#email,
+#coleccion,
+#edad,
+#message {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.full-2 {
+  grid-column: 1fr;
+}
+
+textarea {
+  resize: none;
+}
+
+.boton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #fff;
+  color: #4b4e66;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Alata", sans-serif;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+/* PRODUCTOS */
+
+#warmth>h2,
+#sound>h2,
+#reality>h2,
+#blossom>h2 {
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-
-  > div{
-    margin: 50px 20px 50px 20px;
-  }
+  font-family: "Alata", sans-serif;
+  color: #c09d95;
 }
 
-#iconos-contact {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  filter: invert();
-  
-  figure img {
-    margin-right: 10px;
-  }
+#figuras-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#figuras-productos figure {
+grid-column: span 1;
+}
+
+#figuras-productos figure img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
+#figuras-productos figure h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Alata", sans-serif;
+  color: var(--main-white);
 }
