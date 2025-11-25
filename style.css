@@ -17,7 +17,6 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   color: rgb(48, 45, 45);
 }
 
@@ -345,7 +344,7 @@ textarea {
   margin-top: 10px;
 }
 
-button {
+.boton>button {
   background-color: #fff;
   color: #4b4e66;
   font-weight: bold;
@@ -362,6 +361,40 @@ button:hover {
 }
 
 /* PRODUCTOS */
+
+#header-productos {
+  position: relative; 
+  z-index: 10;
+}
+
+#menu-productos {
+  margin: 20px auto;
+}
+
+#menu-productos>ul {
+  display: flex;
+  justify-content: center;
+  li {
+    list-style: none;
+  }
+
+  a {
+    margin: 20px 50px;
+    text-decoration: none;
+    color:  rgb(48, 45, 45);
+    font-family: "Alata", sans-serif;
+    font-weight: bold;
+  }
+}
+
+.start {
+  position: relative; height: 100vh;
+}
+
+.deg {
+  background: #F2F1F0;
+  background: linear-gradient(180deg, rgba(242, 241, 240, 1) 0%, rgba(217, 207, 204, 1) 4%, rgba(191, 157, 149, 1) 11%, rgba(217, 192, 163, 1) 16%, rgba(242, 242, 242, 1) 21%, rgba(189, 176, 217, 1) 25%, rgba(131, 115, 191, 1) 33%, rgba(79, 63, 115, 1) 39%, rgba(242, 213, 196, 1) 49%, rgba(166, 146, 134, 1) 53%, rgba(89, 72, 66, 1) 64%, rgba(140, 138, 108, 1) 79%, rgba(88, 89, 60, 1) 89%, rgba(247, 226, 225, 1) 100%);
+}
 
 #warmth>h2,
 #sound>h2,
@@ -387,7 +420,12 @@ button:hover {
 }
 
 #figuras-productos figure {
-grid-column: span 1;
+  grid-column: span 1;
+  transition: 0.5s;
+}
+
+#figuras-productos figure:hover {
+  transform: scale(1.1);
 }
 
 #figuras-productos figure img {
@@ -401,4 +439,64 @@ grid-column: span 1;
   margin-top: 10px;
   font-family: "Alata", sans-serif;
   color: var(--main-white);
+}
+
+/* CARROUSEL*/
+
+#carrousel {
+  position: absolute; 
+  top: 0; width: 100%; 
+  height: 100vh; 
+  z-index: 5;
+}
+
+#carrusel-videos {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.carrusel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carrusel-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carrusel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.dot.active {
+  background-color: white;
+  transform: scale(1.05);
 }

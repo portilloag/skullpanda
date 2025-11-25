@@ -13,251 +13,336 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-
-
 </head>
 
-<body style="background-color: #f4f1e9;
-  background-image: url(img/fibras.png);
-  background-blend-mode: hard-light;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;">
+<body>
 
-
-  <header id="header-productos">
-    <div class="margin-20">
-      <h1>SKULLPANDA</h1>
-      <nav class="main-menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="productos.html">PRODUCTOS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+  <div class="start">
+    <header id="header-productos">
+      <div>
+        <h1>SKULLPANDA</h1>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+            <li><a href="about.html">NOSOTROS</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="carrousel">
+      <div id="carrusel-videos">
+  
+        <div class="carrusel-track">
+  
+          <div class="carrusel-slide">
+            <video src="multimedia/the-warmth.webm" muted playsinline></video>
+          </div>
+  
+          <div class="carrusel-slide">
+            <video src="multimedia/the-sound.webm" muted playsinline></video>
+          </div>
+  
+          <div class="carrusel-slide">
+            <video src="multimedia/image-of-reality.webm" muted playsinline></video>
+          </div>
+  
+          <div class="carrusel-slide">
+            <video src="multimedia/ink-plum-blossom.webm" muted playsinline></video>
+          </div>
+  
+        </div>
+  
+        <div class="carrusel-indicators">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <div class="container-1200">
-    <main id="main-productos">
-      <section id="warmth">
-        <h2>THE WARMTH</h2>
-        <div id="figuras-productos">
-          <figure>
-            <img src="img/personajes/the-warmth/the-raining-day.png" alt="The Raining Day">
-            <h3>THE RAINING DAY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/chirping.png" alt="Chirping">
-            <h3>CHIRPING</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/doodling.png" alt="Doodling">
-            <h3>DOODLING</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/enjoy-oneself.png" alt="Enjoy Oneself">
-            <h3>ENJOY ONESELF</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/loossening.png" alt="Loossening">
-            <h3>LOOSSENING</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/recall-the-past1.png" alt="Recall The Past 1">
-            <h3>RECALL THE PAST</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/taste-from-the-memory.png" alt="Taste From The Memory">
-            <h3>TASTE FROM THE MEMORY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/the-encounter1.png" alt="The Encounter">
-            <h3>THE ENCOUNTER</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/the-day-off.png" alt="The Day Off">
-            <h3>THE DAY OFF</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/wandering.png" alt="The Wandering">
-            <h3>THE WANDERING</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/mind-with-the-wind.png" alt="Mind With The Wind">
-            <h3>MIND WITH THE WIND</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/the-warmth/the-scent.png" alt="The Scent">
-            <h3>THE SCENT</h3>
-          </figure>
-        </div>
-      </section>
-
-      <section id="sound">
-        <h2>THE SOUND</h2>
-        <div id="figuras-productos">
-          <figure>
-            <img src="img/personajes/sound/serenity.png" alt="Serenity">
-            <h3>SERENITY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/terror.png" alt="Terror">
-            <h3>TERROR</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/trust.png" alt="Trust">
-            <h3>TRUST</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/vigilance.png" alt="Vigilance">
-            <h3>VIGILANCE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/admiration.png" alt="Admiration">
-            <h3>ADMIRATION</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/anger.png" alt="Anger">
-            <h3>ANGER</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/awe.png" alt="Awe">
-            <h3>AWE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/disgust.png" alt="Disgust">
-            <h3>DISGUST</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/ecstasy.png" alt="Ecstasy">
-            <h3>ECSTASY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/grief.png" alt="Grief">
-            <h3>GRIEF</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/joy.png" alt="Joy">
-            <h3>JOY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/sound/pensiveness.png" alt="Pensiveness">
-            <h3>PENSIVENESS</h3>
-          </figure>
-        </div>
-      </section>
-
-      <section id="reality">
-        <h2>IMAGE OF REALITY</h2>
-        <div id="figuras-productos">
-          <figure>
-            <img src="img/personajes/reality/philosophy.png" alt="Philosophy">
-            <h3>PHILOSOPHY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/pivot.png" alt="Pivot">
-            <h3>PIVOT</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/soar.png" alt="Soar">
-            <h3>SOAR</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/timelapse.png" alt="Timelapse">
-            <h3>TIMELAPSE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/antigravity.png" alt="Antigravity">
-            <h3>ANTIGRAVITY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/constraint.png" alt="Constraint">
-            <h3>CONSTRAINT</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/disguise.png" alt="Disguise">
-            <h3>DISGUISE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/imagination.png" alt="Imagination">
-            <h3>IMAGINATION</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/merchant.png" alt="Merchant">
-            <h3>MERCHANT</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/duality-white.png" alt="Duality (White)">
-            <h3>DUALITY (WHITE)</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/duality-black.png" alt="Duality (Black)">
-            <h3>DUALITY (BLACK)</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/reality/paradox.png" alt="Paradox">
-            <h3>PARADOX</h3>
-          </figure>
-        </div>
-      </section>
-
-      <section id="blossom">
-        <h2>INK PLUM BLOSSOM</h2>
-        <div id="figuras-productos">
-          <figure>
-            <img src="img/personajes/blossom/valley.png" alt="Valley">
-            <h3>VALLEY</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/scene.png" alt="Scene">
-            <h3>SCENE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/forest.png" alt="Forest">
-            <h3>FOREST</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/moon.png" alt="Moon">
-            <h3>MOON</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/moss.png" alt="Moss">
-            <h3>MOSS</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/root.png" alt="Root">
-            <h3>ROOT</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/snow.png" alt="Snow">
-            <h3>DISGUISE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/spring.png" alt="Spring">
-            <h3>SPRING</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/wind.png" alt="Wind">
-            <h3>WIND</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/bamboo.png" alt="Bamboo">
-            <h3>BAMBOO</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/bridge.png" alt="Bridge">
-            <h3>BRIDGE</h3>
-          </figure>
-          <figure>
-            <img src="img/personajes/blossom/courtyard.png" alt="Courtyard">
-            <h3>COURTYARD</h3>
-          </figure>
-        </div>
-      </section>
-    </main>
   </div>
+
+  <div id="menu-productos">
+    <ul>
+      <li><a href="#warmth">THE WARMTH</a></li>
+      <li><a href="#sound">SOUND</a></li>
+      <li><a href="#reality">IMAGE OF REALITY</a></li>
+      <li><a href="#blossom">INK PLUM BLOSSOM</a></li>
+    </ul>
+  </div>
+
+  <div class="deg">
+    <div class="container-1200">
+      <main id="main-productos">
+        <section id="warmth">
+          <h2>THE WARMTH</h2>
+          <div id="figuras-productos">
+            <figure>
+              <img src="img/personajes/the-warmth/the-raining-day.png" alt="The Raining Day">
+              <h3>THE RAINING DAY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/chirping.png" alt="Chirping">
+              <h3>CHIRPING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/doodling.png" alt="Doodling">
+              <h3>DOODLING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/enjoy-oneself.png" alt="Enjoy Oneself">
+              <h3>ENJOY ONESELF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/loossening.png" alt="Loossening">
+              <h3>LOOSSENING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/recall-the-past1.png" alt="Recall The Past 1">
+              <h3>RECALL THE PAST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/taste-from-the-memory.png" alt="Taste From The Memory">
+              <h3>TASTE FROM THE MEMORY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-encounter1.png" alt="The Encounter">
+              <h3>THE ENCOUNTER</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-day-off.png" alt="The Day Off">
+              <h3>THE DAY OFF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/wandering.png" alt="The Wandering">
+              <h3>THE WANDERING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/mind-with-the-wind.png" alt="Mind With The Wind">
+              <h3>MIND WITH THE WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-scent.png" alt="The Scent">
+              <h3>THE SCENT</h3>
+            </figure>
+          </div>
+        </section>
+
+        <section id="sound">
+          <h2>THE SOUND</h2>
+          <div id="figuras-productos">
+            <figure>
+              <img src="img/personajes/sound/serenity.png" alt="Serenity">
+              <h3>SERENITY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/terror.png" alt="Terror">
+              <h3>TERROR</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/trust.png" alt="Trust">
+              <h3>TRUST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/vigilance.png" alt="Vigilance">
+              <h3>VIGILANCE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/admiration.png" alt="Admiration">
+              <h3>ADMIRATION</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/anger.png" alt="Anger">
+              <h3>ANGER</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/awe.png" alt="Awe">
+              <h3>AWE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/disgust.png" alt="Disgust">
+              <h3>DISGUST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/ecstasy.png" alt="Ecstasy">
+              <h3>ECSTASY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/grief.png" alt="Grief">
+              <h3>GRIEF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/joy.png" alt="Joy">
+              <h3>JOY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/pensiveness.png" alt="Pensiveness">
+              <h3>PENSIVENESS</h3>
+            </figure>
+          </div>
+        </section>
+
+        <section id="reality">
+          <h2>IMAGE OF REALITY</h2>
+          <div id="figuras-productos">
+            <figure>
+              <img src="img/personajes/reality/philosophy.png" alt="Philosophy">
+              <h3>PHILOSOPHY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/pivot.png" alt="Pivot">
+              <h3>PIVOT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/soar.png" alt="Soar">
+              <h3>SOAR</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/timelapse.png" alt="Timelapse">
+              <h3>TIMELAPSE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/antigravity.png" alt="Antigravity">
+              <h3>ANTIGRAVITY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/constraint.png" alt="Constraint">
+              <h3>CONSTRAINT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/disguise.png" alt="Disguise">
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/imagination.png" alt="Imagination">
+              <h3>IMAGINATION</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/merchant.png" alt="Merchant">
+              <h3>MERCHANT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/duality-white.png" alt="Duality (White)">
+              <h3>DUALITY (WHITE)</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/duality-black.png" alt="Duality (Black)">
+              <h3>DUALITY (BLACK)</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/paradox.png" alt="Paradox">
+              <h3>PARADOX</h3>
+            </figure>
+          </div>
+        </section>
+
+        <section id="blossom">
+          <h2>INK PLUM BLOSSOM</h2>
+          <div id="figuras-productos">
+            <figure>
+              <img src="img/personajes/blossom/valley.png" alt="Valley">
+              <h3>VALLEY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/scene.png" alt="Scene">
+              <h3>SCENE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/forest.png" alt="Forest">
+              <h3>FOREST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/moon.png" alt="Moon">
+              <h3>MOON</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/moss.png" alt="Moss">
+              <h3>MOSS</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/root.png" alt="Root">
+              <h3>ROOT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/snow.png" alt="Snow">
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/spring.png" alt="Spring">
+              <h3>SPRING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/wind.png" alt="Wind">
+              <h3>WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/bamboo.png" alt="Bamboo">
+              <h3>BAMBOO</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/bridge.png" alt="Bridge">
+              <h3>BRIDGE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/courtyard.png" alt="Courtyard">
+              <h3>COURTYARD</h3>
+            </figure>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const track = document.querySelector('.carrusel-track');
+      const slides = Array.from(track.children);
+      const dots = document.querySelectorAll('.dot');
+      const videos = document.querySelectorAll('.carrusel-slide video');
+
+      let currentIndex = 0;
+
+      const moveToSlide = (index) => {
+        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+
+        dots.forEach(d => d.classList.remove('active'));
+        dots[index].classList.add('active');
+
+        videos.forEach(v => {
+          v.pause();
+          v.currentTime = 0;
+        });
+
+        const currentVideo = videos[index];
+        currentVideo.play();
+
+        currentIndex = index;
+      };
+
+      videos.forEach((video, index) => {
+        video.loop = false;
+
+        video.addEventListener('ended', () => {
+          let nextIndex = currentIndex + 1;
+          if (nextIndex >= slides.length) {
+            nextIndex = 0;
+          }
+          moveToSlide(nextIndex);
+        });
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          moveToSlide(index);
+        });
+      });
+      moveToSlide(0);
+
+    });
+  </script>
 </body>
+
 </html>
