@@ -13,109 +13,122 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <script src="menu-mobile.js"></script>
 </head>
 
 <body>
 
-<div style="background-color: #f4f1e9;
-background-image: url(img/efecto-papel.png);
-background-blend-mode: hard-light;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh; 
-display: flex;
-flex-direction: column;
-overflow: hidden;">
-<header id="header-contact">
-  <div style="color: black;">
-    <div class="margin-20">
-      <h1>SKULLPANDA</h1>
-      <nav class="menu-contact">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">NOSOTROS</a></li>
-          <li><a href="productos.html">PRODUCTOS</a></li>
-          <li><a href="contact.html">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  <div id="contact-bgd">
+    <header id="header-contact">
+      <div style="color: black;">
+        <div class="margin-20">
+          <h1>SKULLPANDA</h1>
+          <button class="menu-burger" id="menuToggle">☰</button>
+          <div class="menu-overlay" id="menuOverlay"></div>
+          <nav class="menu-var" id="siteNav">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">NOSOTROS</a></li>
+              <li><a href="productos.html">PRODUCTOS</a></li>
+              <li><a href="contact.html">CONTACTO</a></li>
+              <li><a href="member.html">ÚNETE</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<div id="bgd-contact">
+    <div id="bgd-contact">
 
-    <div class="container-1200">
-      <main id="main-contact">
-        <section class="info-contact">
-          <h2>VAMOS, <br>CONTACTANOS!</h2>
+      <div class="container-1200">
+        <main id="main-contact">
+          <section class="info-contact">
+            <h2>VAMOS, <br>CONTACTANOS!</h2>
 
-          <div id="iconos-contact">
-            <a href="https://www.instagram.com/skullpandaz/?hl=es" target="_blank" class="instagram"></a>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="whatsapp"></a>
-            <a href="https://www.facebook.com/popmartglobal" target="_blank" class="facebook"></a>
-            <a href="mailto:skullpandatoys@hotmail.com" target="_blank" class="email"></a>
-          </div>
-
-          <div class="info-alumno">
-            <p>Nombre y apellido: Andrea Portillo</p>
-            <p>Materia: Maquetado y programación web</p>
-            <p>Docente: Carlos Ferrer</p>
-            <p>Este sitio es una entrega para un TP del <br>primer cuatrimestre de la Escuela Da Vinci 2025</p>
-          </div>
-        </section>
-
-        <form action="thank-you.html" method="get">
-          <section id="contact">
-
-            <div class="grid-2">
-              <div class="col full-2">
-                <label for="name">NOMBRE</label>
-                <input type="text" name="name" id="name" placeholder="Tu(s) nombre(s)" autofocus autocomplete="name" required>
-              </div>
-
-              <div class="col full-2">
-                <label for="last-name">APELLIDO</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Tu(s) apellido(s)" required>
-              </div>
+            <div id="iconos-contact">
+              <a href="https://www.instagram.com/skullpandaz/?hl=es" target="_blank" class="instagram"></a>
+              <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="whatsapp"></a>
+              <a href="https://www.facebook.com/popmartglobal" target="_blank" class="facebook"></a>
+              <a href="mailto:skullpandatoys@hotmail.com" target="_blank" class="email"></a>
             </div>
 
-            <div class="col full">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
-            </div>
-
-            <div class="grid-2">
-              <div class="col full-2">
-                <label for="coleccion">COLECCIÓN FAVORITA</label>
-                <select name="coleccion" id="coleccion" required size="1">
-                  <option value="warmth">The Warmth</option>
-                  <option value="sound">Sound</option>
-                  <option value="reality">Image of Reality</option>
-                  <option value="blossom">Ink Plum Blossom</option>
-                </select>
-              </div>
-
-              <div class="col full-2">
-                <label for="edad">EDAD</label>
-                <input type="date" id="edad" name="edad" required>
-              </div>
-            </div>
-
-            <div class="col full">
-              <label for="message">DÉJANOS UN MENSAJE</label>
-              <textarea name="message" id="message" placeholder="Escriba un comentario aquí" rows="5"
-                required></textarea>
-            </div>
-
-            <div class="boton full">
-              <button type="submit">ENVIAR</button>
+            <div class="info-alumno">
+              <p>Nombre y apellido: Andrea Portillo</p>
+              <p>Materia: Maquetado y programación web</p>
+              <p>Docente: Carlos Ferrer</p>
+              <p>Este sitio es una entrega para un TP del <br>primer cuatrimestre de la Escuela Da Vinci 2025</p>
             </div>
           </section>
-        </form>
-      </main>
+
+          <form action="thank-you.html" method="get">
+            <section id="contact">
+
+              <div class="grid-2">
+                <div class="col full-2">
+                  <label for="name">NOMBRE</label>
+                  <input type="text" name="name" id="name" placeholder="Tu(s) nombre(s)" autofocus autocomplete="name"
+                    required>
+                </div>
+
+                <div class="col full-2">
+                  <label for="last-name">APELLIDO</label>
+                  <input type="text" name="last-name" id="last-name" placeholder="Tu(s) apellido(s)" required>
+                </div>
+              </div>
+
+              <div class="col full">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+              </div>
+
+              <div class="grid-2">
+                <div class="col full-2">
+                  <label for="coleccion">COLECCIÓN FAVORITA</label>
+                  <select name="coleccion" id="coleccion" required size="1">
+                    <option value="">Selecciona una colección</option>
+                    <option value="warmth">The Warmth</option>
+                    <option value="sound">Sound</option>
+                    <option value="reality">Image of Reality</option>
+                    <option value="blossom">Ink Plum Blossom</option>
+                  </select>
+                </div>
+
+                <div class="col full-2">
+                  <label for="edad">EDAD</label>
+                  <input type="date" id="edad" name="edad" required>
+                </div>
+              </div>
+
+              <div class="col full">
+                <label>GÉNERO</label>
+                <div class="genero">
+                  <label><input type="checkbox" name="genero" value="femenino"> FEMENINO</label>
+                  <label><input type="checkbox" name="genero" value="masculino"> MASCULINO</label>
+                  <label><input type="checkbox" name="genero" value="otro"> OTRO</label>
+                </div>
+              </div>
+
+              <div class="col full">
+                <label for="message">DÉJANOS UN MENSAJE</label>
+                <textarea name="message" id="message" placeholder="Escriba un comentario aquí" rows="5"
+                  required></textarea>
+              </div>
+
+              <div class="boton full">
+                <button type="submit">ENVIAR</button>
+              </div>
+            </section>
+          </form>
+        </main>
+
+        <div id="mapa">
+          <h2>UBICACIÓN</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29527.76107961899!2d114.13422452916032!3d22.31696921008351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400bbe1e0622d%3A0x89ef46c9a3ec432d!2zUE9QIE1BUlQgKOWlp-a1t-WfjuW6lyk!5e0!3m2!1ses-419!2sar!4v1765593535376!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
 </body>
 

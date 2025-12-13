@@ -1,0 +1,13 @@
+Escuela de Arte Multimedial Da Vinci
+CARRERA: Diseño y Programación Web
+MATERIA: Maquetado y Desarrollo Web
+TRABAJO PRÁCTICO: Examen Parcial 2
+PROFESOR: Carlos Ferrer
+ALUMNO: Andrea Gabriela Portillo Romero
+CUATRIMESTRE: 1er Cuatrimestre
+COMISIÓN: AP
+TURNO: Mañana
+FECHA DE ENTREGA: 27 de diciembre del 2025
+
+repositorio github
+https://github.com/portilloag/skullpanda.git

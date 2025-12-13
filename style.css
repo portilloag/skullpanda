@@ -4,6 +4,10 @@
   --main-white: white;
   --main-lightblue: #79A9E9;
   --font-alata: "Alata", sans-serif;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --shadow-drop: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  --border-radius: 20px;
+  --transition: 0.5s;
 }
 
 * {
@@ -26,12 +30,6 @@ h2 {
   font-size: 2rem;
 }
 
-.container {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
 .container-1200 {
   width: 80%;
   max-width: 1200px;
@@ -47,23 +45,35 @@ h2 {
 }
 
 abbr {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-#main-header{
+#main-header {
   position: relative;
   width: 100%;
   height: 100vh;
 }
 
 #main-header>div:first-child {
-  background-image: url(img/cielo-home.png);
+  background-image: url(img/cielo-home1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   position: relative;
   width: 100%;
   z-index: 10;
+  padding-bottom: 3%;
+}
+
+#contact-bgd {
+  background-color: #f4f1e9;
+  background-image: url(img/efecto-papel.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 /* Esto lo que hace es que la barra de navegacion este toda alineada con la imagen y los links esten del todo a la derecha*/
@@ -79,20 +89,13 @@ abbr {
 
 .banner img {
   width: 100%;
-  /* background-image: url(img/banner-webfull.png);
-  background-color: var(--main-lightblue);
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  mask: linear-gradient(to bottom, #000 80%, transparent 100%);
-  -webkit-mask: linear-gradient(to bottom, #000 80%, transparent 100%); */
 }
 
 #main-header>div,
 #header-productos>div,
 #header-contact>div,
-#header-about>div {
+#header-about>div,
+#header-thank-you>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +129,7 @@ abbr {
   a {
     margin: 0.75rem;
     text-decoration: none;
-    color: white;
+    color: var(--main-white);
     font-family: "Impact";
     font-style: normal;
   }
@@ -135,8 +138,6 @@ abbr {
 .margin-20 {
   margin: 20px;
 }
-
-/* para el degradado*/
 
 .sobre-nosotros {
   display: flex;
@@ -168,15 +169,16 @@ abbr {
   font-weight: bold;
   border: none;
   padding: 10px 30px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   font-family: var(--font-alata);
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .section .sobre-nosotros img {
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(var(--shadow-drop));
 }
 
 #new .figuras-productos,
@@ -205,17 +207,14 @@ abbr {
   justify-content: flex-end;
 }
 
-.boton-2>a {
-  background-color: #fff;
+.boton-2>a,
+.boton>button {
+  background-color: var(--main-white);
   color: #4b4e66;
-  font-weight: bold;
-  border: none;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-family: var(--font-alata);
+}
+
+.boton>button:hover {
+  background-color: #f0f0f0;
 }
 
 .bgd-image {
@@ -239,6 +238,7 @@ abbr {
 #footer-home .container-1200 {
   margin-bottom: 20px;
   width: 100%;
+  
 }
 
 #footer-home .container-1200 h2 {
@@ -251,13 +251,15 @@ abbr {
   font-size: 3rem;
 }
 
-/*CONTACT*/
+/*--------------CONTACT-------------*/
 
 #header-contact {
   flex-shrink: 0;
 }
 
-#header-contact h1 {
+#header-contact h1,
+#header-member h1,
+#header-thank-you h1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +269,11 @@ abbr {
   font-style: normal;
 }
 
-.menu-contact>ul {
+#menu-toggle {
+  filter: invert(90%);
+}
+
+.menu-var>ul {
   display: flex;
   justify-content: center;
 
@@ -311,10 +317,18 @@ abbr {
   flex: 1;
 }
 
-.info-contact h2 {
+.info-contact h2,
+#mapa h2 {
   font-size: 2.5rem;
   font-weight: normal;
   font-family: var(--font-alata);
+}
+
+#mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #iconos-contact {
@@ -338,7 +352,7 @@ abbr {
 
 form {
   display: flex;
-  margin-top: 50px;
+  margin-top: 10%;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
@@ -362,22 +376,39 @@ label {
 #name,
 #last-name,
 #email,
+#email-2,
 #coleccion,
 #edad,
-#message {
+#message,
+#password,
+#password-2,
+#telefono,
+#calle,
+#codigo-area,
+#altura,
+#localidad,
+#provincia,
+#pais,
+#card-number,
+#name-last,
+#expired,
+#year,
+#codigo-seguridad,
+#dni {
   border: none;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   padding: 10px;
+}
+
+.genero {
+  display: flex;
+  gap: 20px;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-}
-
-.full-2 {
-  grid-column: 1fr;
 }
 
 textarea {
@@ -391,12 +422,12 @@ textarea {
 }
 
 .boton>button {
-  background-color: #fff;
+  background-color: var(--main-white);
   color: #4b4e66;
   font-weight: bold;
   border: none;
   padding: 10px 30px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: var(--font-alata);
@@ -406,7 +437,8 @@ button:hover {
   background-color: #f0f0f0;
 }
 
-/* PRODUCTOS */
+
+/*---------PRODUCTOS---------*/
 
 #header-productos {
   position: relative;
@@ -455,7 +487,7 @@ button:hover {
 #reality,
 #blossom {
   scroll-margin-top: 100px;
-  transition: 0.5s;
+  transition: var(--transition);
 }
 
 
@@ -508,7 +540,7 @@ button:hover {
 
 .figuras-productos figure {
   grid-column: span 1;
-  transition: 0.5s;
+  transition: var(--transition);
 }
 
 .figuras-productos figure:hover {
@@ -518,7 +550,7 @@ button:hover {
 .figuras-productos figure img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(var(--shadow-drop));
 }
 
 .figuras-productos figure h3 {
@@ -624,20 +656,20 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: background-color 0.3s;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 .dot.active {
-  background-color: white;
+  background-color: var(--main-white);
   transform: scale(1.05);
 }
 
-/* FOOTER PRODUCTOS */
+/*---------FOOTER PRODUCTOS------------*/
 
 #footer-productos,
 #footer-about {
   background-image: url(img/footer-general.png);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(48, 45, 45);
@@ -687,44 +719,32 @@ button:hover {
   text-decoration: underline;
 }
 
-.instagram {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-image: url("img/instagram.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.whatsapp {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-image: url("img/whatsapp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.facebook {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-image: url("img/facebook.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+.instagram,
+.whatsapp,
+.facebook,
 .email {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-image: url("img/gmail.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.instagram {
+  background-image: url("img/instagram.png");
+}
+
+.whatsapp {
+  background-image: url("img/whatsapp.png");
+}
+
+.facebook {
+  background-image: url("img/facebook.png");
+}
+
+.email {
+  background-image: url("img/gmail.png");
 }
 
 
@@ -733,7 +753,7 @@ button:hover {
   bottom: 20px;
   right: 20px;
   background: crimson;
-  color: white;
+  color: var(--main-white);
   text-decoration: none;
   font-size: 1.5rem;
   width: 50px;
@@ -754,7 +774,7 @@ button:hover {
   background-size: cover;
 }
 
-#header-about>div{
+#header-about>div {
   padding-bottom: 50px;
 }
 
@@ -836,7 +856,7 @@ button:hover {
   gap: 60px;
   max-width: 600px;
   background-color: var(--main-white);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   min-width: 100%;
   padding: 30px 0 0 50px;
   color: #916563;
@@ -848,4 +868,339 @@ button:hover {
 
 .elfsight-app-032e600b-f97a-4614-8bab-ca5511cf0332 {
   margin-top: 50px;
+}
+
+#menuToggle {
+  display: none;
+}
+
+/*--------------MEMBERSHIP----------*/
+
+#plan {
+  margin-top: 5%;
+}
+
+#plan .container-1200 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  min-height: 500px;
+}
+
+#basic,
+#pro,
+#premium {
+  font-family: var(--font-alata);
+  padding: 10px 20px 30px 20px;
+  border-radius: 24px;
+  max-width: 33.33%;
+  min-height: 380px;
+  list-style-position: inside;
+}
+
+#basic {
+  background-color: var(--main-white);
+}
+
+#pro {
+  background-color: #bcc2e4;
+  color: black;
+}
+
+#premium {
+  background-color: black;
+  color: var(--main-white);
+}
+
+.container-1200 #basic a,
+.container-1200 #pro a,
+.container-1200 #premium a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 20px auto;
+  border-radius: 24px;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  font-family: var(--font-alata);
+  text-decoration: none;
+}
+
+.container-1200 #basic a {
+  background-color: black;
+  color: var(--main-white);
+}
+
+.container-1200 #pro a {
+  background-color: #e3e1ba;
+  color: black;
+}
+
+.container-1200 #premium a {
+  background-color: var(--main-white);
+  color: black;
+}
+
+#basic h2,
+#pro h2,
+#premium h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+#basic span,
+#pro span,
+#premium span {
+  display: block;
+  font-size: 1.7rem;
+  margin: 15px 0 15px 0;
+}
+
+.contenedor-botones-pago {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.opcion-pago input[type="radio"] {
+  display: none;
+}
+
+.tarjeta-pago {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--main-white);
+  border: 1px solid #dddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  height: 60px;
+  font-family: "Alata", sans-serif;
+  color: black;
+}
+
+.tarjeta-pago img {
+  width: 30px;
+  height: auto;
+}
+
+.tarjeta-pago:hover {
+  background-color: #f9f9f9;
+  border-color: #bbb;
+}
+
+.opcion-pago input[type="radio"]:checked+label {
+  border-color: #00a650;
+  color: #00a650;
+  background-color: #f0fdf4;
+  font-weight: bold;
+}
+
+#member-bgd {
+  background-color: #f4f1e9;
+  background-image: url(img/efecto-papel.png);
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#thank-you-section .boton-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+/*-----------MOBILE RESPONSIVE----------*/
+
+@media only screen and (max-width: 480px) {
+
+  .fondo-home {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-1200 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  #main-header,
+  #header-about {
+    height: auto;
+  }
+
+  #banner-mobile-home {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/assets/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-position: top;
+  }
+
+  #main-header>div:first-child {
+    background-color: var(--main-lightblue);
+    background-image: none;
+    padding: 0;
+  }
+
+  #main-header .margin-20,
+  #header-about .margin-20,
+  #header-productos .margin-20,
+  #header-contact .margin-20 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  #main-header .main-menu ul,
+  #header-about .main-menu ul,
+  #header-productos .main-menu ul,
+  #header-contact .menu-var ul,
+  #header-member .menu-var ul {
+    flex-direction: column;
+    margin: 1rem 0;
+    display: none;
+  }
+
+  .menu-burger,
+  #menuToggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: rgb(48, 45, 45);
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0;
+  }
+
+  .menu-var {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #f4f1e9;
+    transition: left 0.4s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-var.active {
+    left: 0;
+  }
+
+  .menu-var ul {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+
+  .menu-var ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-var ul li a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 10px;
+    color: rgb(48, 45, 45);
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    backdrop-filter: blur(2px);
+  }
+
+  .menu-overlay.active {
+    display: block;
+  }
+
+  #new {
+    flex-direction: column;
+  }
+
+  /* sistema de columna mobile */
+
+  .m-col-1 {
+    width: 8.3%;
+  }
+
+  .m-col-2 {
+    width: 16.66%;
+  }
+
+  .m-col-3 {
+    width: 25%;
+  }
+
+  .m-col-4 {
+    width: 33.33%;
+  }
+
+  .m-col-5 {
+    width: 41.66%;
+  }
+
+  .m-col-6 {
+    width: 50%;
+  }
+
+  .m-col-7 {
+    width: 58.33%;
+  }
+
+  .m-col-8 {
+    width: 66.66%;
+  }
+
+  .m-col-9 {
+    width: 75%;
+  }
+
+  .m-col-10 {
+    width: 83.33%;
+  }
+
+  .m-col-11 {
+    width: 91.66%;
+  }
+
+  .m-col-12 {
+    width: 100%;
+  }
 }
