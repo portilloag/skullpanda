@@ -331,18 +331,21 @@ abbr {
   margin-bottom: 20px;
 }
 
-#iconos-contact {
+#iconos-contact,
+#iconos-contact-mobile {
   margin: 5px 0 30px 0;
   display: flex;
   gap: 20px;
   filter: invert(95%);
 }
 
-#iconos-contact a {
+#iconos-contact a,
+#iconos-contact-mobile a{
   transition: 0.2s;
 }
 
-#iconos-contact a:hover {
+#iconos-contact a:hover,
+#iconos-contact-mobile {
   transform: scale(1.05);
 }
 
@@ -1135,11 +1138,16 @@ button:hover {
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(--main-white);
     cursor: pointer;
     z-index: 1001;
     padding: 0;
     margin-left: 20px;
+  }
+
+  #main-header div .margin-20 button,
+  #header-about div .margin-20 button,
+  #header-productos div .margin-20 button{
+    color: var(--main-white);
   }
 
   .menu-var,
@@ -1343,6 +1351,18 @@ button:hover {
   #main-contact #plan .container-1200 #premium {
     max-width:100%;
     min-height: 100%;
+  }
+
+  #main-contact {
+    margin-top: 10%;
+  }
+
+  #thank-you-section h2 {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   /* sistema de columna mobile */

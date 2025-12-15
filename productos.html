@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SKULLPANDA</title>
 
-    <!-- link de estilos -->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKULLPANDA</title>
 
-    <!-- link de fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-      rel="stylesheet"
-    />
+  <!-- link de estilos -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- link de scripts -->
-    <script src="carrousel.js"></script>
-    <script src="menu-mobile.js"></script>
-  </head>
+  <!-- link de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
 
-  <body>
-    <div class="start">
-      <header id="header-productos">
-        <div>
+  <!-- link de scripts -->
+  <script src="carrousel.js"></script>
+  <script src="menu-mobile.js"></script>
+</head>
+
+<body>
+  <div class="start">
+    <header id="header-productos">
+      <div>
         <div class="margin-20">
           <h1>SKULLPANDA</h1>
           <button class="menu-burger" id="menuToggle">☰</button>
@@ -40,757 +38,598 @@
           </nav>
         </div>
       </div>
-      </header>
-      <div id="carrousel">
-        <div id="carrusel-videos">
-          <div class="carrusel-track">
-            <div class="carrusel-slide">
-              <video src="multimedia/the-warmth.mp4" muted playsinline></video>
-            </div>
-
-            <div class="carrusel-slide">
-              <video src="multimedia/the-sound.mp4" muted playsinline></video>
-            </div>
-
-            <div class="carrusel-slide">
-              <video
-                src="multimedia/image-of-reality.mp4"
-                muted
-                playsinline
-              ></video>
-            </div>
-
-            <div class="carrusel-slide">
-              <video
-                src="multimedia/ink-plum-blossom.mp4"
-                muted
-                playsinline
-              ></video>
-            </div>
+    </header>
+    <div id="carrousel">
+      <div id="carrusel-videos">
+        <div class="carrusel-track">
+          <div class="carrusel-slide">
+            <video src="multimedia/the-warmth.mp4" muted playsinline></video>
           </div>
 
-          <div class="carrusel-indicators">
-            <button class="dot active"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
+          <div class="carrusel-slide">
+            <video src="multimedia/the-sound.mp4" muted playsinline></video>
           </div>
+
+          <div class="carrusel-slide">
+            <video src="multimedia/image-of-reality.mp4" muted playsinline></video>
+          </div>
+
+          <div class="carrusel-slide">
+            <video src="multimedia/ink-plum-blossom.mp4" muted playsinline></video>
+          </div>
+        </div>
+
+        <div class="carrusel-indicators">
+          <button class="dot active"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
+          <button class="dot"></button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="carrousel-mobile">
-        <div id="carrusel-videos-mobile">
-          <div class="carrusel-track">
-            <div class="carrusel-slide">
-              <video src="img/assets/the-warmth-mobile.webm" muted playsinline></video>
-            </div>
+  <div id="carrousel-mobile">
+    <div id="carrusel-videos-mobile">
+      <div class="carrusel-track">
+        <div class="carrusel-slide">
+          <video src="img/assets/the-warmth-mobile.webm" muted playsinline></video>
+        </div>
 
-            <div class="carrusel-slide">
-              <video src="img/assets/the-sound-mobile.webm" muted playsinline></video>
-            </div>
+        <div class="carrusel-slide">
+          <video src="img/assets/the-sound-mobile.webm" muted playsinline></video>
+        </div>
 
-            <div class="carrusel-slide">
-              <video
-                src="img/assets/image-of-reality-mobile.webm"
-                muted
-                playsinline
-              ></video>
-            </div>
+        <div class="carrusel-slide">
+          <video src="img/assets/image-of-reality-mobile.webm" muted playsinline></video>
+        </div>
 
-            <div class="carrusel-slide">
-              <video
-                src="img/assets/ink-plum-blossom-mobile.webm"
-                muted
-                playsinline
-              ></video>
-            </div>
-          </div>
-
-          <div class="carrusel-indicators">
-            <button class="dot active"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
-          </div>
+        <div class="carrusel-slide">
+          <video src="img/assets/ink-plum-blossom-mobile.webm" muted playsinline></video>
         </div>
       </div>
+
+      <div class="carrusel-indicators">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="top">↑</a>
+
+  <div id="menu-productos">
+    <ul>
+      <li><a href="#warmth">THE WARMTH</a></li>
+      <li><a href="#sound">THE SOUND</a></li>
+      <li><a href="#reality">IMAGE OF REALITY</a></li>
+      <li><a href="#blossom">INK PLUM BLOSSOM</a></li>
+    </ul>
+  </div>
+
+  <div class="deg">
+    <div class="container-1200">
+      <main id="main-productos">
+        <section id="warmth">
+          <h2>THE WARMTH</h2>
+          <div class="figuras-productos pc">
+            <figure>
+              <img src="img/personajes/the-warmth/the-raining-day.png" alt="The Raining Day" />
+              <h3>THE RAINING DAY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/chirping.png" alt="Chirping" />
+              <h3>CHIRPING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/doodling.png" alt="Doodling" />
+              <h3>DOODLING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/enjoy-oneself.png" alt="Enjoy Oneself" />
+              <h3>ENJOY ONESELF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/loossening.png" alt="Loossening" />
+              <h3>LOOSSENING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/recall-the-past1.png" alt="Recall The Past 1" />
+              <h3>RECALL THE PAST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/taste-from-the-memory.png" alt="Taste From The Memory" />
+              <h3>TASTE FROM THE MEMORY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-encounter1.png" alt="The Encounter" />
+              <h3>THE ENCOUNTER</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-day-off.png" alt="The Day Off" />
+              <h3>THE DAY OFF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/wandering.png" alt="The Wandering" />
+              <h3>THE WANDERING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/mind-with-the-wind.png" alt="Mind With The Wind" />
+              <h3>MIND WITH THE WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/the-warmth/the-scent.png" alt="The Scent" />
+              <h3>THE SCENT</h3>
+            </figure>
+          </div>
+
+          <div class="figuras-productos mobile">
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/the-raining-day.png" alt="The Raining Day" />
+              <h3>THE RAINING DAY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/chirping.png" alt="Chirping" />
+              <h3>CHIRPING</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/doodling.png" alt="Doodling" />
+              <h3>DOODLING</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/enjoy-oneself.png" alt="Enjoy Oneself" />
+              <h3>ENJOY ONESELF</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/loossening.png" alt="Loossening" />
+              <h3>LOOSSENING</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/recall-the-past.png" alt="Recall The Past 1" />
+              <h3>RECALL THE PAST</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/taste-from-the-memory.png"
+                alt="Taste From The Memory" />
+              <h3>TASTE FROM THE MEMORY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/the-encounter1.png" alt="The Encounter" />
+              <h3>THE ENCOUNTER</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/the-day-off.png" alt="The Day Off" />
+              <h3>THE DAY OFF</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/wandering.png" alt="The Wandering" />
+              <h3>THE WANDERING</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/mind-with-the-wind.png" alt="Mind With The Wind" />
+              <h3>MIND WITH THE WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/the-warmth/the-scent.png" alt="The Scent" />
+              <h3>THE SCENT</h3>
+            </figure>
+          </div>
+          <div class="figura-info">
+            <figure>
+              <img src="img/personajes/the-warmth/figura-info.png"
+                alt="Información de colección, con figura The Warmth" />
+              <p>
+                <strong title="La Serie Calidez" lang="en">THE WARMTH SERIES</strong> Una oda a la serenidad cotidiana.
+                Esta
+                colección se aleja del ruido para capturar la temperatura de
+                las emociones suaves: la comodidad de un día lluvioso, el
+                abrazo de un suéter o la paz de una siesta. Con un acabado
+                especial que imita la textura de la cerámica vidriada y tonos
+                tierra pastel, cada figura es una pequeña pieza de calma
+                diseñada para <em>derretir</em> el estrés del día a día.
+                <span class="launch">
+                  Día de lanzamiento: 29 de diciembre de 2025
+                </span>
+              </p>
+            </figure>
+          </div>
+        </section>
+
+        <section id="sound">
+          <h2>THE SOUND</h2>
+          <div class="figuras-productos pc">
+            <figure>
+              <img src="img/personajes/sound/serenity.png" alt="Serenity" />
+              <h3>SERENITY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/terror.png" alt="Terror" />
+              <h3>TERROR</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/trust.png" alt="Trust" />
+              <h3>TRUST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/vigilance.png" alt="Vigilance" />
+              <h3>VIGILANCE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/admiration.png" alt="Admiration" />
+              <h3>ADMIRATION</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/anger.png" alt="Anger" />
+              <h3>ANGER</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/awe.png" alt="Awe" />
+              <h3>AWE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/disgust.png" alt="Disgust" />
+              <h3>DISGUST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/ecstasy.png" alt="Ecstasy" />
+              <h3>ECSTASY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/grief.png" alt="Grief" />
+              <h3>GRIEF</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/joy.png" alt="Joy" />
+              <h3>JOY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/sound/pensiveness.png" alt="Pensiveness" />
+              <h3>PENSIVENESS</h3>
+            </figure>
+          </div>
+
+          <div class="figuras-productos mobile">
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/serenity.png" alt="Serenity" />
+              <h3>SERENITY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/terror.png" alt="Terror" />
+              <h3>TERROR</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/trust.png" alt="Trust" />
+              <h3>TRUST</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/vigilance.png" alt="Vigilance" />
+              <h3>VIGILANCE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/admiration.png" alt="Admiration" />
+              <h3>ADMIRATION</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/anger.png" alt="Anger" />
+              <h3>ANGER</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/awe.png" alt="Awe" />
+              <h3>AWE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/disgust.png" alt="Disgust" />
+              <h3>DISGUST</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/ecstasy.png" alt="Ecstasy" />
+              <h3>ECSTASY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/grief.png" alt="Grief" />
+              <h3>GRIEF</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/joy.png" alt="Joy" />
+              <h3>JOY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/sound/pensiveness.png" alt="Pensiveness" />
+              <h3>PENSIVENESS</h3>
+            </figure>
+          </div>
+          <div class="figura-info">
+            <figure>
+              <img src="img/personajes/sound/info-figura.png" alt="Información de colección, con figura The Sound" />
+              <p>
+                <strong title="La Serie Sonido" lang="en">THE SOUND</strong> transforma la música y el ritmo en arte
+                coleccionable. Esta serie captura la energía del universo
+                musical con el estilo vanguardista único de <strong title="Calavera de Panda"
+                  lang="en">SKULLPANDA</strong>. Cada
+                figura explora la cultura auditiva, desde el street style y la
+                escena <abbr title="Disk Jockey" lang="en">DJ</abbr> hasta elementos futuristas y cibernéticos. Con
+                paletas de colores audaces, neones y metálicos, la colección
+                celebra a quienes viven con su propia banda sonora. Es una
+                serie que se oye tanto como se ve.
+                <span class="launch">
+                  Día de lanzamiento: 28 de junio del 2024
+                </span>
+              </p>
+            </figure>
+          </div>
+        </section>
+
+        <section id="reality">
+          <h2>IMAGE OF REALITY</h2>
+          <div class="figuras-productos pc">
+            <figure>
+              <img src="img/personajes/reality/philosophy.png" alt="Philosophy" />
+              <h3>PHILOSOPHY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/pivot.png" alt="Pivot" />
+              <h3>PIVOT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/soar.png" alt="Soar" />
+              <h3>SOAR</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/timelapse.png" alt="Timelapse" />
+              <h3>TIMELAPSE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/antigravity.png" alt="Antigravity" />
+              <h3>ANTIGRAVITY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/constraint.png" alt="Constraint" />
+              <h3>CONSTRAINT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/disguise.png" alt="Disguise" />
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/imagination.png" alt="Imagination" />
+              <h3>IMAGINATION</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/merchant.png" alt="Merchant" />
+              <h3>MERCHANT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/duality-white.png" alt="Duality (White)" />
+              <h3>DUALITY (WHITE)</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/duality-black.png" alt="Duality (Black)" />
+              <h3>DUALITY (BLACK)</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/reality/paradox.png" alt="Paradox" />
+              <h3>PARADOX</h3>
+            </figure>
+          </div>
+
+          <div class="figuras-productos mobile">
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/philosophy.png" alt="Philosophy" />
+              <h3>PHILOSOPHY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/pivot.png" alt="Pivot" />
+              <h3>PIVOT</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/soar.png" alt="Soar" />
+              <h3>SOAR</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/timelapse.png" alt="Timelapse" />
+              <h3>TIMELAPSE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/antigravity.png" alt="Antigravity" />
+              <h3>ANTIGRAVITY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/constraint.png" alt="Constraint" />
+              <h3>CONSTRAINT</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/disguise.png" alt="Disguise" />
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/imagination.png" alt="Imagination" />
+              <h3>IMAGINATION</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/merchant.png" alt="Merchant" />
+              <h3>MERCHANT</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/duality-white.png" alt="Duality (White)" />
+              <h3>DUALITY (WHITE)</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/duality-black.png" alt="Duality (Black)" />
+              <h3>DUALITY (BLACK)</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/image-of-reality/paradox.png" alt="Paradox" />
+              <h3>PARADOX</h3>
+            </figure>
+          </div>
+          <div class="figura-info">
+            <figure>
+              <img src="img/personajes/reality/info-figuras.png"
+                alt="Información de colección, con figura Image of Reality" />
+              <p>
+                <strong title="La Serie Imagen de la Realidad" lang="en">IMAGE OF REALITY</strong> es la serie de
+                <strong title="Calavera de Panda" lang="en">SKULLPANDA</strong> que desafía la
+                percepción. Explora la delgada línea entre lo real y lo
+                ilusorio, con un estilo audaz y una paleta de colores
+                vibrante. Cada figura invita a cuestionar lo que vemos,
+                fusionando lo onírico con la estética moderna de <strong title="Calavera de Panda"
+                  lang="en">SKULLPANDA</strong>. A
+                nivel visual, la serie se aleja de la ternura convencional
+                para abrazar una estética <span title="vanguardista" lang="fr">avant-garde</span> y sofisticada. Los
+                diseños juegan magistralmente con la duplicidad: máscaras que
+                ocultan intenciones, espejos que deforman la identidad y
+                siluetas fragmentadas que parecen fallos en la realidad.
+                <span class="launch">
+                  Día de lanzamiento: 10 de febrero del 2024
+                </span>
+              </p>
+            </figure>
+          </div>
+        </section>
+
+        <section id="blossom">
+          <h2>INK PLUM BLOSSOM</h2>
+          <div class="figuras-productos pc">
+            <figure>
+              <img src="img/personajes/blossom/valley.png" alt="Valley" />
+              <h3>VALLEY</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/scene.png" alt="Scene" />
+              <h3>SCENE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/forest.png" alt="Forest" />
+              <h3>FOREST</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/moon.png" alt="Moon" />
+              <h3>MOON</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/moss.png" alt="Moss" />
+              <h3>MOSS</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/root.png" alt="Root" />
+              <h3>ROOT</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/snow.png" alt="Snow" />
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/spring.png" alt="Spring" />
+              <h3>SPRING</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/wind.png" alt="Wind" />
+              <h3>WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/bamboo.png" alt="Bamboo" />
+              <h3>BAMBOO</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/bridge.png" alt="Bridge" />
+              <h3>BRIDGE</h3>
+            </figure>
+            <figure>
+              <img src="img/personajes/blossom/courtyard.png" alt="Courtyard" />
+              <h3>COURTYARD</h3>
+            </figure>
+          </div>
+
+          <div class="figuras-productos mobile">
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/valley.png" alt="Valley" />
+              <h3>VALLEY</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/scene.png" alt="Scene" />
+              <h3>SCENE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/forest.png" alt="Forest" />
+              <h3>FOREST</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/moon.png" alt="Moon" />
+              <h3>MOON</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/moss.png" alt="Moss" />
+              <h3>MOSS</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/root.png" alt="Root" />
+              <h3>ROOT</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/snow.png" alt="Snow" />
+              <h3>DISGUISE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/spring.png" alt="Spring" />
+              <h3>SPRING</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/wind.png" alt="Wind" />
+              <h3>WIND</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/bamboo.png" alt="Bamboo" />
+              <h3>BAMBOO</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/bridge.png" alt="Bridge" />
+              <h3>BRIDGE</h3>
+            </figure>
+            <figure>
+              <img src="img/assets/personajes-mobile/ink-blossom/courtyard.png" alt="Courtyard" />
+              <h3>COURTYARD</h3>
+            </figure>
+          </div>
+          <div class="figura-info">
+            <figure>
+              <img src="img/personajes/blossom/info-figuras.png"
+                alt="Información de colección, con figura Ink Plum Blossom" />
+              <p>
+                <strong title="La Serie Ink Plum Blossom" lang="en">INK PLUM BLOSSOM</strong> fusiona el estilo <strong
+                  title="Calavera de Panda" lang="en">SKULLPANDA</strong> con la elegancia
+                atemporal del arte tradicional asiático. Inspirada en la
+                pintura a tinta y la simbología de la flor de ciruelo, su
+                paleta es minimalista: negros intensos, blancos y grises, con
+                sutiles acentos de color borgoña. Es una colección meditativa
+                que celebra la belleza de la simplicidad.
+                <span class="launch">
+                  Día de lanzamiento: 3 de noviembre del 2023
+                </span>
+              </p>
+            </figure>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <a href="#" class="top">↑</a>
-
-    <div id="menu-productos">
-      <ul>
-        <li><a href="#warmth">THE WARMTH</a></li>
-        <li><a href="#sound">THE SOUND</a></li>
-        <li><a href="#reality">IMAGE OF REALITY</a></li>
-        <li><a href="#blossom">INK PLUM BLOSSOM</a></li>
-      </ul>
-    </div>
-
-    <div class="deg">
+    <footer id="footer-productos">
       <div class="container-1200">
-        <main id="main-productos">
-          <section id="warmth">
-            <h2>THE WARMTH</h2>
-            <div class="figuras-productos pc">
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/the-raining-day.png"
-                  alt="The Raining Day"
-                />
-                <h3>THE RAINING DAY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/chirping.png"
-                  alt="Chirping"
-                />
-                <h3>CHIRPING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/doodling.png"
-                  alt="Doodling"
-                />
-                <h3>DOODLING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/enjoy-oneself.png"
-                  alt="Enjoy Oneself"
-                />
-                <h3>ENJOY ONESELF</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/loossening.png"
-                  alt="Loossening"
-                />
-                <h3>LOOSSENING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/recall-the-past1.png"
-                  alt="Recall The Past 1"
-                />
-                <h3>RECALL THE PAST</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/taste-from-the-memory.png"
-                  alt="Taste From The Memory"
-                />
-                <h3>TASTE FROM THE MEMORY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/the-encounter1.png"
-                  alt="The Encounter"
-                />
-                <h3>THE ENCOUNTER</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/the-day-off.png"
-                  alt="The Day Off"
-                />
-                <h3>THE DAY OFF</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/wandering.png"
-                  alt="The Wandering"
-                />
-                <h3>THE WANDERING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/mind-with-the-wind.png"
-                  alt="Mind With The Wind"
-                />
-                <h3>MIND WITH THE WIND</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/the-scent.png"
-                  alt="The Scent"
-                />
-                <h3>THE SCENT</h3>
-              </figure>
-            </div>
-
-            <div class="figuras-productos mobile">
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/the-raining-day.png"
-                  alt="The Raining Day"
-                />
-                <h3>THE RAINING DAY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/chirping.png"
-                  alt="Chirping"
-                />
-                <h3>CHIRPING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/doodling.png"
-                  alt="Doodling"
-                />
-                <h3>DOODLING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/enjoy-oneself.png"
-                  alt="Enjoy Oneself"
-                />
-                <h3>ENJOY ONESELF</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/loossening.png"
-                  alt="Loossening"
-                />
-                <h3>LOOSSENING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/recall-the-past.png"
-                  alt="Recall The Past 1"
-                />
-                <h3>RECALL THE PAST</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/taste-from-the-memory.png"
-                  alt="Taste From The Memory"
-                />
-                <h3>TASTE FROM THE MEMORY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/the-encounter1.png"
-                  alt="The Encounter"
-                />
-                <h3>THE ENCOUNTER</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/the-day-off.png"
-                  alt="The Day Off"
-                />
-                <h3>THE DAY OFF</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/wandering.png"
-                  alt="The Wandering"
-                />
-                <h3>THE WANDERING</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/mind-with-the-wind.png"
-                  alt="Mind With The Wind"
-                />
-                <h3>MIND WITH THE WIND</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/the-warmth/the-scent.png"
-                  alt="The Scent"
-                />
-                <h3>THE SCENT</h3>
-              </figure>
-            </div>
-            <div class="figura-info">
-              <figure>
-                <img
-                  src="img/personajes/the-warmth/figura-info.png"
-                  alt="Información de colección, con figura The Warmth"
-                />
-                <p>
-                  <strong title="La Serie Calidez" lang="en">THE WARMTH SERIES</strong> Una oda a la serenidad cotidiana. Esta
-                  colección se aleja del ruido para capturar la temperatura de
-                  las emociones suaves: la comodidad de un día lluvioso, el
-                  abrazo de un suéter o la paz de una siesta. Con un acabado
-                  especial que imita la textura de la cerámica vidriada y tonos
-                  tierra pastel, cada figura es una pequeña pieza de calma
-                  diseñada para <em>derretir</em> el estrés del día a día.
-                  <span class="launch">
-                    Día de lanzamiento: 29 de diciembre de 2025
-                  </span>
-                </p>
-              </figure>
-            </div>
-          </section>
-
-          <section id="sound">
-            <h2>THE SOUND</h2>
-            <div class="figuras-productos pc">
-              <figure>
-                <img src="img/personajes/sound/serenity.png" alt="Serenity" />
-                <h3>SERENITY</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/terror.png" alt="Terror" />
-                <h3>TERROR</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/trust.png" alt="Trust" />
-                <h3>TRUST</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/vigilance.png" alt="Vigilance" />
-                <h3>VIGILANCE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/sound/admiration.png" alt="Admiration"/>
-                <h3>ADMIRATION</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/anger.png" alt="Anger" />
-                <h3>ANGER</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/awe.png" alt="Awe" />
-                <h3>AWE</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/disgust.png" alt="Disgust" />
-                <h3>DISGUST</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/ecstasy.png" alt="Ecstasy" />
-                <h3>ECSTASY</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/grief.png" alt="Grief" />
-                <h3>GRIEF</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/sound/joy.png" alt="Joy" />
-                <h3>JOY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/sound/pensiveness.png" alt="Pensiveness" />
-                <h3>PENSIVENESS</h3>
-              </figure>
-            </div>
-
-            <div class="figuras-productos mobile">
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/serenity.png" alt="Serenity" />
-                <h3>SERENITY</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/terror.png" alt="Terror" />
-                <h3>TERROR</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/trust.png" alt="Trust" />
-                <h3>TRUST</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/vigilance.png" alt="Vigilance" />
-                <h3>VIGILANCE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/sound/admiration.png" alt="Admiration"/>
-                <h3>ADMIRATION</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/anger.png" alt="Anger" />
-                <h3>ANGER</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/awe.png" alt="Awe" />
-                <h3>AWE</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/disgust.png" alt="Disgust" />
-                <h3>DISGUST</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/ecstasy.png" alt="Ecstasy" />
-                <h3>ECSTASY</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/grief.png" alt="Grief" />
-                <h3>GRIEF</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/sound/joy.png" alt="Joy" />
-                <h3>JOY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/sound/pensiveness.png" alt="Pensiveness" />
-                <h3>PENSIVENESS</h3>
-              </figure>
-            </div>
-            <div class="figura-info">
-              <figure>
-                <img
-                  src="img/personajes/sound/info-figura.png"
-                  alt="Información de colección, con figura The Sound"
-                />
-                <p>
-                  <strong title="La Serie Sonido" lang="en">THE SOUND</strong> transforma la música y el ritmo en arte
-                  coleccionable. Esta serie captura la energía del universo
-                  musical con el estilo vanguardista único de <strong title="Calavera de Panda" lang="en">SKULLPANDA</strong>. Cada
-                  figura explora la cultura auditiva, desde el street style y la
-                  escena <abbr title="Disk Jockey" lang="en">DJ</abbr> hasta elementos futuristas y cibernéticos. Con
-                  paletas de colores audaces, neones y metálicos, la colección
-                  celebra a quienes viven con su propia banda sonora. Es una
-                  serie que se oye tanto como se ve.
-                  <span class="launch">
-                    Día de lanzamiento: 28 de junio del 2024
-                  </span>
-                </p>
-              </figure>
-            </div>
-          </section>
-
-          <section id="reality">
-            <h2>IMAGE OF REALITY</h2>
-            <div class="figuras-productos pc">
-              <figure>
-                <img
-                  src="img/personajes/reality/philosophy.png"
-                  alt="Philosophy"
-                />
-                <h3>PHILOSOPHY</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/reality/pivot.png" alt="Pivot" />
-                <h3>PIVOT</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/reality/soar.png" alt="Soar" />
-                <h3>SOAR</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/timelapse.png"
-                  alt="Timelapse"
-                />
-                <h3>TIMELAPSE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/antigravity.png"
-                  alt="Antigravity"
-                />
-                <h3>ANTIGRAVITY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/constraint.png"
-                  alt="Constraint"
-                />
-                <h3>CONSTRAINT</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/reality/disguise.png" alt="Disguise" />
-                <h3>DISGUISE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/imagination.png"
-                  alt="Imagination"
-                />
-                <h3>IMAGINATION</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/reality/merchant.png" alt="Merchant" />
-                <h3>MERCHANT</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/duality-white.png"
-                  alt="Duality (White)"
-                />
-                <h3>DUALITY (WHITE)</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/reality/duality-black.png"
-                  alt="Duality (Black)"
-                />
-                <h3>DUALITY (BLACK)</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/reality/paradox.png" alt="Paradox" />
-                <h3>PARADOX</h3>
-              </figure>
-            </div>
-
-            <div class="figuras-productos mobile">
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/philosophy.png"
-                  alt="Philosophy"
-                />
-                <h3>PHILOSOPHY</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/image-of-reality/pivot.png" alt="Pivot" />
-                <h3>PIVOT</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/image-of-reality/soar.png" alt="Soar" />
-                <h3>SOAR</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/timelapse.png"
-                  alt="Timelapse"
-                />
-                <h3>TIMELAPSE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/antigravity.png"
-                  alt="Antigravity"
-                />
-                <h3>ANTIGRAVITY</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/constraint.png"
-                  alt="Constraint"
-                />
-                <h3>CONSTRAINT</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/image-of-reality/disguise.png" alt="Disguise" />
-                <h3>DISGUISE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/imagination.png"
-                  alt="Imagination"
-                />
-                <h3>IMAGINATION</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/image-of-reality/merchant.png" alt="Merchant" />
-                <h3>MERCHANT</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/duality-white.png"
-                  alt="Duality (White)"
-                />
-                <h3>DUALITY (WHITE)</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/image-of-reality/duality-black.png"
-                  alt="Duality (Black)"
-                />
-                <h3>DUALITY (BLACK)</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/image-of-reality/paradox.png" alt="Paradox" />
-                <h3>PARADOX</h3>
-              </figure>
-            </div>
-            <div class="figura-info">
-              <figure>
-                <img
-                  src="img/personajes/reality/info-figuras.png"
-                  alt="Información de colección, con figura Image of Reality"
-                />
-                <p>
-                  <strong title="La Serie Imagen de la Realidad" lang="en">IMAGE OF REALITY</strong> es la serie de <strong title="Calavera de Panda" lang="en">SKULLPANDA</strong> que desafía la
-                  percepción. Explora la delgada línea entre lo real y lo
-                  ilusorio, con un estilo audaz y una paleta de colores
-                  vibrante. Cada figura invita a cuestionar lo que vemos,
-                  fusionando lo onírico con la estética moderna de <strong title="Calavera de Panda" lang="en">SKULLPANDA</strong>. A
-                  nivel visual, la serie se aleja de la ternura convencional
-                  para abrazar una estética <span title="vanguardista" lang="fr">avant-garde</span> y sofisticada. Los
-                  diseños juegan magistralmente con la duplicidad: máscaras que
-                  ocultan intenciones, espejos que deforman la identidad y
-                  siluetas fragmentadas que parecen fallos en la realidad.
-                  <span class="launch">
-                    Día de lanzamiento: 10 de febrero del 2024
-                  </span>
-                </p>
-              </figure>
-            </div>
-          </section>
-
-          <section id="blossom">
-            <h2>INK PLUM BLOSSOM</h2>
-            <div class="figuras-productos pc">
-              <figure>
-                <img src="img/personajes/blossom/valley.png" alt="Valley" />
-                <h3>VALLEY</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/scene.png" alt="Scene" />
-                <h3>SCENE</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/forest.png" alt="Forest" />
-                <h3>FOREST</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/moon.png" alt="Moon" />
-                <h3>MOON</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/moss.png" alt="Moss" />
-                <h3>MOSS</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/root.png" alt="Root" />
-                <h3>ROOT</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/snow.png" alt="Snow" />
-                <h3>DISGUISE</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/spring.png" alt="Spring" />
-                <h3>SPRING</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/wind.png" alt="Wind" />
-                <h3>WIND</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/bamboo.png" alt="Bamboo" />
-                <h3>BAMBOO</h3>
-              </figure>
-              <figure>
-                <img src="img/personajes/blossom/bridge.png" alt="Bridge" />
-                <h3>BRIDGE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/personajes/blossom/courtyard.png"
-                  alt="Courtyard"
-                />
-                <h3>COURTYARD</h3>
-              </figure>
-            </div>
-
-            <div class="figuras-productos mobile">
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/valley.png" alt="Valley" />
-                <h3>VALLEY</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/scene.png" alt="Scene" />
-                <h3>SCENE</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/forest.png" alt="Forest" />
-                <h3>FOREST</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/moon.png" alt="Moon" />
-                <h3>MOON</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/moss.png" alt="Moss" />
-                <h3>MOSS</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/root.png" alt="Root" />
-                <h3>ROOT</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/snow.png" alt="Snow" />
-                <h3>DISGUISE</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/spring.png" alt="Spring" />
-                <h3>SPRING</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/wind.png" alt="Wind" />
-                <h3>WIND</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/bamboo.png" alt="Bamboo" />
-                <h3>BAMBOO</h3>
-              </figure>
-              <figure>
-                <img src="img/assets/personajes-mobile/ink-blossom/bridge.png" alt="Bridge" />
-                <h3>BRIDGE</h3>
-              </figure>
-              <figure>
-                <img
-                  src="img/assets/personajes-mobile/ink-blossom/courtyard.png"
-                  alt="Courtyard"
-                />
-                <h3>COURTYARD</h3>
-              </figure>
-            </div>
-            <div class="figura-info">
-              <figure>
-                <img
-                  src="img/personajes/blossom/info-figuras.png"
-                  alt="Información de colección, con figura Ink Plum Blossom"
-                />
-                <p>
-                  <strong title="La Serie Ink Plum Blossom" lang="en">INK PLUM BLOSSOM</strong> fusiona el estilo <strong title="Calavera de Panda" lang="en">SKULLPANDA</strong> con la elegancia
-                  atemporal del arte tradicional asiático. Inspirada en la
-                  pintura a tinta y la simbología de la flor de ciruelo, su
-                  paleta es minimalista: negros intensos, blancos y grises, con
-                  sutiles acentos de color borgoña. Es una colección meditativa
-                  que celebra la belleza de la simplicidad.
-                  <span class="launch">
-                    Día de lanzamiento: 3 de noviembre del 2023
-                  </span>
-                </p>
-              </figure>
-            </div>
-          </section>
-        </main>
-      </div>
-      
-      <footer id="footer-productos">
-        <div class="container-1200">
-          <h2>CONTACTO</h2>
-          <div>
-            <a
-              href="https://www.instagram.com/skullpandaz/?hl=es"
-              target="_blank"
-              class="instagram"
-            ></a>
-            <a
-              href="https://www.whatsapp.com/?lang=es"
-              target="_blank"
-              class="whatsapp"
-            ></a>
-            <a
-              href="https://www.facebook.com/popmartglobal"
-              target="_blank"
-              class="facebook"
-            ></a>
-            <a
-              href="mailto:skullpandatoys@hotmail.com"
-              target="_blank"
-              class="email"
-            ></a>
-          </div>
-          <div>
-            <p>© Copyright 2025 - 2025</p>
-            <p>All rights reserved. Powered by Andrea Portillo</p>
-          </div>
+        <h2>CONTACTO</h2>
+        <div>
+          <a href="https://www.instagram.com/skullpandaz/?hl=es" target="_blank" class="instagram"></a>
+          <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="whatsapp"></a>
+          <a href="https://www.facebook.com/popmartglobal" target="_blank" class="facebook"></a>
+          <a href="mailto:skullpandatoys@hotmail.com" target="_blank" class="email"></a>
         </div>
-      </footer>
-    </div>
-  </body>
+        <div>
+          <p>© Copyright 2025 - 2025</p>
+          <p>All rights reserved. Powered by Andrea Portillo</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
