@@ -55,13 +55,13 @@ abbr {
 }
 
 #main-header>div:first-child {
-  background-image: url(img/cielo-home1.png);
-  background-size: cover;
+  background-image: url(img/banner-webfull.png);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  position: relative;
   width: 100%;
+  height: 140vh;
   z-index: 10;
+  justify-content: flex-start;
   padding-bottom: 3%;
 }
 
@@ -238,7 +238,7 @@ abbr {
 #footer-home .container-1200 {
   margin-bottom: 20px;
   width: 100%;
-  
+
 }
 
 #footer-home .container-1200 h2 {
@@ -605,7 +605,8 @@ button:hover {
 
 /* CARROUSEL*/
 
-#carrousel {
+#carrousel,
+#carrousel-mobile {
   position: absolute;
   top: 0;
   width: 100%;
@@ -613,7 +614,8 @@ button:hover {
   z-index: 5;
 }
 
-#carrusel-videos {
+#carrusel-videos,
+#carrusel-videos-mobile {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -1015,11 +1017,55 @@ button:hover {
   overflow: hidden;
 }
 
-#thank-you-section .boton-2{
+/*-----------THANK YOU PAGE----------*/
+
+#container-thank-you {
+  background-image: url(img/fondo-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#main-thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-alata);
+}
+
+#main-thank-you h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#main-thank-you #thank-you-section p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+#thank-you-section .boton-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+}
+
+#carrousel-mobile {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.info-contact-mobile {
+  display: none;
 }
 
 /*-----------MOBILE RESPONSIVE----------*/
@@ -1049,11 +1095,10 @@ button:hover {
   #banner-mobile-home {
     display: block;
     width: 100%;
-    height: 50vh;
     background-image: url(img/assets/banner-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 490px;
     background-position: top;
   }
 
@@ -1061,6 +1106,7 @@ button:hover {
     background-color: var(--main-lightblue);
     background-image: none;
     padding: 0;
+    height: auto;
   }
 
   #main-header .margin-20,
@@ -1089,13 +1135,15 @@ button:hover {
     background: none;
     border: none;
     font-size: 2rem;
-    color: rgb(48, 45, 45);
+    color: var(--main-white);
     cursor: pointer;
     z-index: 1001;
     padding: 0;
+    margin-left: 20px;
   }
 
-  .menu-var {
+  .menu-var,
+  .main-menu {
     position: fixed;
     top: 0;
     left: -100%;
@@ -1110,11 +1158,13 @@ button:hover {
     justify-content: center;
   }
 
-  .menu-var.active {
+  .menu-var.active,
+  .main-menu.active {
     left: 0;
   }
 
-  .menu-var ul {
+  .menu-var ul,
+  .main-menu ul {
     display: flex !important;
     flex-direction: column;
     width: 100%;
@@ -1122,12 +1172,14 @@ button:hover {
     gap: 30px;
   }
 
-  .menu-var ul li {
+  .menu-var ul li,
+  .main-menu ul li {
     width: 100%;
     text-align: center;
   }
 
-  .menu-var ul li a {
+  .menu-var ul li a,
+  .main-menu ul li a {
     font-size: 1.5rem;
     display: block;
     padding: 10px;
@@ -1150,8 +1202,147 @@ button:hover {
     display: block;
   }
 
-  #new {
+  .sobre-nosotros,
+  #sobre-nosotros {
     flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .sobre-nosotros>div {
+    margin-left: 0;
+  }
+
+  #new .figuras-productos,
+  #old .figuras-productos,
+  #specs div,
+  #creadora .creadora-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #old h2 {
+    margin-top: 15%;
+  }
+
+  #sobre-nosotros>div,
+  #specs div {
+    max-width: 90%;
+  }
+
+  #creadora .creadora-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .bgd-mobile {
+    display: block;
+    padding-top: 50px;
+    background-image: url(img/assets/fondo-productos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  #main-productos #warmth .mobile,
+  #main-productos #sound .mobile,
+  #main-productos #reality .mobile,
+  #main-productos #blossom .mobile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #main-productos #warmth .figura-info figure,
+  #main-productos #sound .figura-info figure,
+  #main-productos #reality .figura-info figure,
+  #main-productos #blossom .figura-info figure {
+    flex-direction: column;
+  }
+
+  #main-productos #sound .figura-info figure p {
+    color: black;
+  }
+
+  #carrousel {
+    display: none;
+  }
+
+  #carrousel-mobile {
+    display: block;
+  }
+
+  #menu-productos {
+    display: none;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .deg {
+    background-image: url(img/assets/fondo-productos.png);
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    margin: 50px 0 50px 0;
+  }
+
+  #main-contact {
+    flex-direction: column-reverse;
+  }
+
+  iframe {
+    width: 50%;
+  }
+
+  .info-contact-mobile {
+    filter: invert(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-contact-mobile h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .info-alumno {
+    text-align: center;
+    margin: 0 50px 0 50px;
+  }
+
+  .info-contact {
+    display: none;
+  }
+
+  #main-contact #plan .container-1200 {
+    flex-direction: column;
+    margin-top: 40%;
+  }
+
+  #main-contact #plan .container-1200 #basic,
+  #main-contact #plan .container-1200 #pro,
+  #main-contact #plan .container-1200 #premium {
+    max-width:100%;
+    min-height: 100%;
   }
 
   /* sistema de columna mobile */
